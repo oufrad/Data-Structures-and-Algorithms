@@ -1,6 +1,8 @@
 # Big O Notation
 Big O notation is a fundamental concept in software engineering, crucial for understanding and analyzing the efficiency of algorithms. It is one of the most important concepts for programmers to grasp.
 
+[Big-O-Notation-Graph](Big-O-Notation.jpeg)
+
 ## Understanding Big O Notation
 Big O notation is used to classify algorithms based on how their runtime or space requirements grow relative to the size of their input.
 
