@@ -53,6 +53,8 @@ Hash tables exhibit the following time complexities:
 
 While these complexities make hash tables highly efficient, hash collisions can occur. 
 
+![Hash-Tables-Collisions](Hash-Tables-Collisions.png)
+
 A **hash collision** arises when two elements share the same memory address. Although it's improbable for two keys to have identical hashed values, the memory address derived from the hash may not be unique due to its limited bit representation.
 
 In the event of a collision, a linked list is formed, with the later-added element appended to the previously existing one.
