@@ -62,3 +62,38 @@ In the event of a collision, a linked list is formed, with the later-added eleme
 Numerous methods exist to address hash collisions in hash tables.
 
 To gain a better understanding of hash collision resolution, explore the visualization provided by [Open Hashing Visualization (usfca.edu)](https://www.cs.usfca.edu/~galles/visualization/OpenHash.html).
+
+# Linked List
+
+Linked lists are essential data structures offering unique advantages over arrays.
+
+## Why Use Linked Lists?
+
+While arrays, both static and dynamic, have fixed or limited memory allocations, linked lists provide dynamic memory management. When arrays are full and require resizing, elements need to be copied to a new location, incurring a time complexity of O(n). Additionally, inserting or deleting elements in arrays necessitates shifting indexes, also O(n) operations.
+
+Linked lists mitigate these issues:
+
+- Prepend: O(1)
+- Append: O(1)
+- Lookup: O(n)
+- Insert: O(n)
+- Delete: O(n)
+
+Unlike arrays, linked lists do not require shifting elements during insertions or deletions; instead, they adjust pointers.
+
+### Array Advantages over Linked Lists 
+
+Arrays offer fast access to elements via indices, with a time complexity of O(1). In contrast, linked lists require iteration (traversal) to find a specific value, resulting in a time complexity of O(n).
+
+Moreover, arrays benefit from sequential memory access, leveraging computer caching systems for faster iteration compared to linked lists.
+
+## What is a Linked List?
+
+A linked list comprises nodes connected by pointers.
+
+- Each node contains a data value and a pointer to the next node.
+- The first node, known as the head, and the last node, the tail, define the linked list. The tail points to null.
+
+Linked lists may not be available in all programming languages. For instance, in JavaScript, you need to implement them from scratch.
+
+Explore a visual representation of linked lists at [Linked List (Single, Doubly), Stack, Queue, Deque - VisuAlgo](https://visualgo.net/en/list).
