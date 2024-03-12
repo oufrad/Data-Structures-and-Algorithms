@@ -47,7 +47,7 @@ class LinkedList():
             current_node = current_node.next
             current_index += 1
 
-    def remove(self, index):
+    def remove(self, index):        # O(n)
         current_index = 0
         current_node = self.head
         if index <= 0: 
@@ -61,7 +61,22 @@ class LinkedList():
                 return
             current_node = current_node.next
             current_index += 1
-    
+            
+    def reverse(self):          # O(n)
+        if self.head.next is None: 
+            return  self.head
+        current_node = self.head
+        previous_node = None
+        next_node = self.head.next
+        self.tail = self.head
+        current_node.next = previous_node
+        while next_node is not None:
+            previous_node = current_node
+            current_node = next_node
+            next_node = next_node.next
+            current_node.next = previous_node
+        self.head = current_node
+
     # def travers_to_index(self, index):
     #     current_node = self.head
     #     while current_node is not None: 
@@ -69,7 +84,7 @@ class LinkedList():
     #             return current_node
     #         current_node = current_node.next
     #         current_index += 1
-
+        
 class Node():
     def __init__(self, value, next):
         self.value = value
@@ -89,4 +104,8 @@ linked_list.insert(2,"Lelouch")
 print(linked_list.convert_to_array())
 
 linked_list.remove(3)
+print(linked_list.convert_to_array())
+
+linked_list.reverse()
+
 print(linked_list.convert_to_array())
