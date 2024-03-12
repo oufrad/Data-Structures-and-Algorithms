@@ -46,20 +46,29 @@ class LinkedList():
                 return
             current_node = current_node.next
             current_index += 1
+
     def remove(self, index):
         current_index = 0
         current_node = self.head
         if index <= 0: 
-            #TODO: remove the head of the linked list
-            self.length += 1
-            return
-        elif index >= self.length:
-            #TODO: remove the tail of the linked list
+            self.head = self.head.next
+            self.length -= 1
             return
         while current_node is not None: 
-            # remove an element of index in linked list
+            if current_index == index - 1 and current_index <= self.length:
+                current_node.next = current_node.next.next
+                self.length -= 1
+                return
             current_node = current_node.next
             current_index += 1
+    
+    # def travers_to_index(self, index):
+    #     current_node = self.head
+    #     while current_node is not None: 
+    #         if current_index == index - 1:
+    #             return current_node
+    #         current_node = current_node.next
+    #         current_index += 1
 
 class Node():
     def __init__(self, value, next):
@@ -75,6 +84,9 @@ linked_list.append("Name is ")
 linked_list.prepend("Hi")
 print(linked_list.convert_to_array())
 
-print(linked_list.insert(2,"Lelouch"))
+linked_list.insert(2,"Lelouch")
 
+print(linked_list.convert_to_array())
+
+linked_list.remove(3)
 print(linked_list.convert_to_array())
