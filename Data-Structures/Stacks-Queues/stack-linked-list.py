@@ -1,6 +1,7 @@
 class Stack():
     def __init__(self):
         self.head = None
+        self.length = 0
     
     def convert_to_array(self):
         current_node = self.head
@@ -11,7 +12,7 @@ class Stack():
         return stack_array
 
     def peek(self):
-        return self.head
+        return self.head.value
 
     def push(self, value):
         if self.is_empty():
@@ -19,12 +20,14 @@ class Stack():
         else:
             new_node = Node(value, self.head)
             self.head = new_node
+        self.length += 1
 
     def pop(self):
         if self.is_empty():
             self.head = None
         else:
             self.head = self.head.next
+            self.length -= 1
 
     def is_empty(self):
         if self.head is None: 

@@ -121,3 +121,37 @@ Garbage collection is the process by which a programming language automatically 
 The doubly linked list shares similarities with the singly linked list but introduces a key enhancement: each node contains pointers to both the next and previous elements.
 
 In a singly linked list, each node only holds the address of the next element, limiting traversal to forward direction. However, in a doubly linked list, nodes store references to both the next and previous elements, enabling traversal in both forward and backward directions. This bidirectional capability enhances the flexibility and functionality of the linked list data structure.
+
+## Stacks and Queues
+
+Stacks and queues are both linear data structures, allowing traversal through data elements one by one, with direct access to only one element at a time.
+
+The primary distinction between these two structures lies in how elements are removed.
+
+In stacks and queues, operations primarily involve adding or removing elements from either the beginning or the end of the data structure.
+
+### Stacks (LIFO - Last In, First Out)
+
+Imagine a stack of plates, each placed on top of the other, where only the topmost plate is visible and accessible. Stacks adhere to the **LIFO (Last In, First Out)** principle, meaning the last item added to the stack is the first one to be removed.
+
+Stacks find extensive use cases, such as implementing the undo functionality in file systems or text editors, where the last action performed is the first one to be reversed.
+
+**Operations:**
+- Lookup: O(n)
+- Pop: O(1)
+- Push: O(1)
+- Peek: O(1)
+
+### Queues (FIFO - First In, First Out)
+
+Visualize queues as lines of people waiting to enter a venue, where the first person to join the line is the first one to enter. Queues adhere to the **FIFO (First In, First Out)** principle.
+
+Queues are practical in scenarios like managing reservation requests for an event, ensuring that the first person to reserve receives priority.
+
+**Operations:**
+- Lookup: O(n)
+- Enqueue: O(1)
+- Dequeue: O(1)
+- Peek: O(1)
+
+It's often advantageous to build data structures atop these fundamental structures to restrict the available operations, ensuring efficient and controlled usage. and that's why we use Stacks & Queues
