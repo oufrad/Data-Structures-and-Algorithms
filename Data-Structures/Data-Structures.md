@@ -155,3 +155,58 @@ Queues are practical in scenarios like managing reservation requests for an even
 - Peek: O(1)
 
 It's often advantageous to build data structures atop these fundamental structures to restrict the available operations, ensuring efficient and controlled usage. and that's why we use Stacks & Queues
+
+## Trees
+
+Trees are hierarchical data structures crucial in everyday computing.
+
+They find application in various scenarios:
+
+- **DOM Structure**: The Document Object Model (DOM) in web development represents a tree, with HTML as the root and nested elements like head and body.
+  
+- **Facebook Comments**: Comments on platforms like Facebook form a tree structure, where each comment can have replies, forming sub-comments, and so forth.
+  
+Linked lists can be seen as a simple form of a tree, with just one single path.
+
+![Tree Data Structure](tree.png)
+
+### Binary Tree
+
+A binary tree imposes certain rules:
+
+- Each node can have zero, one, or two children, and each child can have only one parent.
+  
+A **complete binary tree** has no gaps, meaning every level is filled, and the bottom level is filled from left to right. Such trees exhibit two properties:
+
+- The number of nodes doubles as we move down the tree.
+  
+- The number of leaf nodes is the number of nodes above plus one.
+
+### O(log(n))
+
+In computer science, logarithm base 2 (log(n)) signifies how many times you can halve a number to reach 1. In the context of trees, it denotes the number of steps required to traverse the tree's height, aiding efficient searching.
+
+For instance, in a complete binary tree with 8 nodes:
+
+- Level 0: 1 node
+- Level 1: 2 nodes
+- Level 2: 4 nodes
+- Level 3: 8 nodes
+
+To search this tree, you would need log(8) or log(number of nodes) steps.
+
+### Binary Search Tree (BST)
+
+BSTs are binary trees adhering to specific rules:
+
+- Values in the right subtree of a node must be greater, and those in the left subtree must be lesser.
+
+**Operations:**
+
+- Lookup: O(log(n))
+- Insert: O(log(n))
+- Delete: O(log(n))
+
+While hash tables offer O(1) lookup, insert, and delete, trees preserve relationships. For example, organizing folders on a computer with a hash table would hinder accessing subfolders or navigating previous folders.
+
+However, unbalanced BSTs pose a challenge, requiring O(n) time for operations due to resembling a singly linked list. Luckily, most programming languages include built-in methods to balance BSTs.
