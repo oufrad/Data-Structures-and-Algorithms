@@ -210,3 +210,70 @@ BSTs are binary trees adhering to specific rules:
 While hash tables offer O(1) lookup, insert, and delete, trees preserve relationships. For example, organizing folders on a computer with a hash table would hinder accessing subfolders or navigating previous folders.
 
 However, unbalanced BSTs pose a challenge, requiring O(n) time for operations due to resembling a singly linked list. Luckily, most programming languages include built-in methods to balance BSTs.
+
+### Binary Heaps
+
+Binary heaps are specialized binary trees where every node at the top level holds a value greater than all nodes in the level below (**parent nodes are always greater than their children**). There are two types of binary heaps: Max heap, where the values descend from the root, and Min heap, where the values ascend.
+
+In contrast to binary search trees, where the right child must be greater and the left child lesser than the parent, binary heaps impose no such ordering. The sole requirement is that children must be greater than their parent. Consequently, searching or looking up values in binary heaps is less efficient, taking O(n) time instead of O(log(n)). Despite this, binary heaps excel in comparative operations. For instance, they are invaluable when identifying elements exceeding a certain threshold.
+
+It's crucial to note that the memory heap (allocation space for dynamically allocated memory) is distinct from the heap data structure.
+
+We do not need to rebalance a binary heap, unlike a binary search tree.
+
+### Priority Queue
+
+Binary heaps play a crucial role in Priority Queues.
+
+In Priority Queues, each element possesses its priority, ensuring that elements with higher priorities are served before those with lower priorities.
+
+Think of a nightclub queue where both regular attendees and VIPs await entry. VIPs, despite arriving later, are given precedence.
+
+Another example is an emergency room queue in a hospital, where patients with critical conditions receive immediate attention.
+
+## Graphs
+
+Graphs are fundamental and extensively used data structures in computer science, particularly for modeling real-world scenarios.
+
+**Graphs** are essentially a collection of values connected in pairwise fashion. They consist of nodes (vertices) and edges, where nodes represent elements, and edges denote relationships between nodes.
+
+Graphs serve as excellent tools for representing relationships among objects in various contexts. For instance:
+
+- The internet or the World Wide Web can be modeled using graphs.
+  
+- Google Maps utilizes graphs to calculate the shortest paths between locations.
+  
+- Social media platforms like Facebook employ graphs to depict friendships between users.
+  
+- Graphs are also used in representing road networks.
+
+**Types of Graphs**
+
+Graphs can be categorized in several ways:
+
+1. **Directed vs. Undirected Graphs:**
+   
+   - In Directed graphs, edges have a specific direction, allowing movement from one node to another but not necessarily vice versa.
+   
+   - In Undirected graphs, edges are bidirectional, permitting movement between nodes in both directions.
+
+   ![Directed vs. Undirected Graphs](directed-undirected-graphs.png)
+
+2. **Weighted vs. Unweighted Graphs:**
+   
+   - Weighted graphs assign weights to edges, indicating the cost or distance between nodes.
+   
+   - Unweighted graphs do not have such weights associated with edges.
+
+   ![Weighted vs. Unweighted Graphs](weighted-unweighted-graphs.png)
+
+3. **Cyclic vs. Acyclic Graphs:**
+   
+   - Cyclic graphs contain cycles, allowing traversal from one node back to itself via a series of edges.
+   
+   - Acyclic graphs lack such cycles, preventing traversal back to the starting node.
+
+   ![Cyclic vs. Acyclic Graphs](cyclic-acyclic-graphs.png)
+
+
+Graphs are versatile structures with diverse applications, offering powerful representations for various real-world scenarios.

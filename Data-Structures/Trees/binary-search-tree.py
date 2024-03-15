@@ -22,7 +22,6 @@ class BinarySearchTree():
                 else: 
                     current_node.right = new_node
                     return
-        return None
 
     def insert_root(self, node):
         self.root = node
@@ -60,7 +59,7 @@ tree.insert(20)
 tree.insert(170)
 tree.insert(15)
 tree.insert(1)
-tree.remove(170)
+# tree.remove(170)
 
 def traverse(node):
     if node is None:
