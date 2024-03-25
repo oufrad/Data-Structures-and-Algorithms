@@ -41,3 +41,79 @@ For more information on non-comparison algorithms:
 
 - [Radix Sort | Brilliant Math & Science Wiki](https://brilliant.org/wiki/radix-sort/)
 - [Counting Sort | Brilliant Math & Science Wiki](https://brilliant.org/wiki/counting-sort/)
+
+## Searching
+
+Searching is a ubiquitous operation in our daily lives, facilitating tasks such as finding files on our computers, searching for specific words or phrases on a webpage, or seeking information on search engines like Google or YouTube. But how do these searches happen so swiftly, and how do companies manage search capabilities in their products?
+
+### Linear Search
+
+Linear search is a straightforward method for finding a target value within a list. In this algorithm, we iterate over the entire list, comparing each element with the target value until a match is found.
+
+It operates with a time complexity of O(n), indicating linear time. In JavaScript, functions like `indexOf`, `findIndex`, `find`, and `includes` perform linear searches on lists.
+
+However, if the list is sorted, a more efficient approach becomes possible.
+
+### Binary Search
+
+When the list is sorted, binary search offers improved efficiency over O(n).
+
+In binary search, we exploit the sorted nature of the list. Instead of scanning all elements, we compare the target value with the middle element of the list. Based on this comparison, we narrow down the search to either the left or right half of the list, effectively halving the search space. This process continues recursively until the target value is found or the search space is exhausted.
+
+Binary search operates with a time complexity of O(log(n)), significantly faster than linear search.
+
+### Graph & Tree Traversals
+
+Traversal, or visiting every node in a tree or graph, is a common operation, particularly in algorithms such as Divide and Conquer.
+
+Two popular algorithms for traversing graphs and trees are **Breadth First Search (BFS)** and **Depth First Search (DFS)**.
+
+#### Breadth First Search (BFS)
+
+BFS traverses a tree or graph level by level, starting from the root node and moving horizontally to neighboring nodes before descending deeper.
+
+It requires additional memory to keep track of visited nodes but is efficient in finding the shortest paths.
+    ![Breath First Search](imgs/Breadth-first-tree.png)
+
+#### Depth First Search (DFS)
+
+DFS explores a tree or graph by going as deep as possible along each branch before backtracking.
+
+It requires less memory but may be slower on deep graphs or trees.
+
+Both algorithms have their strengths and are suitable for different scenarios.
+    ![Depth First Search](imgs/Depth-first-tree.png)
+
+### BFS vs DFS
+
+- BFS is effective for finding shortest paths but requires more memory.
+  
+- DFS consumes less memory and can determine if a path exists between nodes.
+
+#### Video Resource: 
+
+[Graph Traversals - BFS & DFS](https://www.youtube.com/watch?v=pcKY4hjDrxk)
+
+#### Question & Answers:
+
+```markdown
+- If a solution is close to the root:
+	-- BFS
+
+- For deep trees with rare solutions:
+	-- BFS (DFS can take a long time)
+
+- For wide trees:
+	-- DFS (BFS requires excessive memory)
+
+- For frequent solutions deep in the tree:
+	-- DFS
+
+- To determine if a path exists between nodes:
+	-- DFS
+
+- For finding the shortest path:
+	-- BFS
+```
+
+For finding the shortest path in a weighted graph, algorithms like Bellman or Dijkstra are preferred, with Bellman's algorithm suitable for graphs with negative weights and Dijkstra's algorithm for positive weights. BFS does not utilize weights to find the shortest path.

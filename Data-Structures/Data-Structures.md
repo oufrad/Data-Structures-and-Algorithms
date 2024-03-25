@@ -53,7 +53,7 @@ Hash tables exhibit the following time complexities:
 
 While these complexities make hash tables highly efficient, hash collisions can occur. 
 
-![Hash-Tables-Collisions](Hash-Tables-Collisions.png)
+![Hash-Tables-Collisions](imgs/Hash-Tables-Collisions.png)
 
 A **hash collision** arises when two elements share the same memory address. Although it's improbable for two keys to have identical hashed values, the memory address derived from the hash may not be unique due to its limited bit representation.
 
@@ -168,7 +168,7 @@ They find application in various scenarios:
   
 Linked lists can be seen as a simple form of a tree, with just one single path.
 
-![Tree Data Structure](tree.png)
+![Tree Data Structure](imgs/tree.png)
 
 ### Binary Tree
 
@@ -257,7 +257,7 @@ Graphs can be categorized in several ways:
    
    - In Undirected graphs, edges are bidirectional, permitting movement between nodes in both directions.
 
-   ![Directed vs. Undirected Graphs](directed-undirected-graphs.png)
+   ![Directed vs. Undirected Graphs](imgs/directed-undirected-graphs.png)
 
 2. **Weighted vs. Unweighted Graphs:**
    
@@ -265,7 +265,7 @@ Graphs can be categorized in several ways:
    
    - Unweighted graphs do not have such weights associated with edges.
 
-   ![Weighted vs. Unweighted Graphs](weighted-unweighted-graphs.png)
+   ![Weighted vs. Unweighted Graphs](imgs/weighted-unweighted-graphs.png)
 
 3. **Cyclic vs. Acyclic Graphs:**
    
@@ -273,7 +273,7 @@ Graphs can be categorized in several ways:
    
    - Acyclic graphs lack such cycles, preventing traversal back to the starting node.
 
-   ![Cyclic vs. Acyclic Graphs](cyclic-acyclic-graphs.png)
+   ![Cyclic vs. Acyclic Graphs](imgs/cyclic-acyclic-graphs.png)
 
 
 Graphs are versatile structures with diverse applications, offering powerful representations for various real-world scenarios.
