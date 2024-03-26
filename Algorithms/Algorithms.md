@@ -117,3 +117,26 @@ Both algorithms have their strengths and are suitable for different scenarios.
 ```
 
 For finding the shortest path in a weighted graph, algorithms like Bellman or Dijkstra are preferred, with Bellman's algorithm suitable for graphs with negative weights and Dijkstra's algorithm for positive weights. BFS does not utilize weights to find the shortest path.
+
+## Dynamic Programming
+
+Dynamic programming serves as an optimization technique, leveraging caching to enhance computational efficiency.
+
+In essence, dynamic programming resolves complex problems by breaking them down into a series of smaller, manageable subproblems. Once these subproblems are solved, their solutions are stored or cached. Consequently, if the same subproblem recurs, its solution can be retrieved from the cache, circumventing redundant computations.
+
+### Memoization
+
+Memoization, a key facet of dynamic programming, accelerates program execution by caching the outcomes of resource-intensive function calls. When encountering identical inputs in subsequent invocations, previously computed results are promptly retrieved from memory.
+
+Repeatedly solving identical problems consumes time and inflates overall program runtime. Memoization mitigates this issue by preserving calculated results in memory, thereby reducing time complexity.
+
+Memoization epitomizes a specific form of caching, focusing on storing function return values contingent on input. While caching encapsulates a broader concept, memoization specifically pertains to caching function outcomes based on input parameters.
+
+To ascertain whether a problem can benefit from dynamic programming optimization, consider the following steps:
+
+1. **Divisibility into Subproblems:** Can the problem be decomposed into smaller, solvable subproblems?
+2. **Recursive Solution:** Is there a recursive approach to solving the problem?
+3. **Repetitive Subproblems:** Do recurring subproblems emerge during the solution process?
+4. **Subproblem Memoization:** Can subproblems be memoized to store their solutions for future use?
+
+By adhering to these steps, one can effectively identify and leverage dynamic programming optimizations to streamline problem-solving processes.
