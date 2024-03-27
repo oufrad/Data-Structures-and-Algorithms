@@ -3,7 +3,7 @@ Big O notation is a fundamental concept in software engineering, crucial for und
 
 ![Big-O-Notation-Graph](Big-O-Notation.jpeg)
 
-## Understanding Big O Notation
+## 1. Understanding Big O Notation
 Big O notation is used to classify algorithms based on how their runtime or space requirements grow relative to the size of their input.
 
 * **O(1)**: Constant Time
@@ -11,10 +11,10 @@ Big O notation is used to classify algorithms based on how their runtime or spac
 * **O(n^2)**: Quadratic Time
 * **O(n!)**: Factorial Time (the worst-case scenario)
 
-## Importance of Big O Notation
+## 2. Importance of Big O Notation
 Imagine you build a function or program that executes quickly on your machine. However, a friend claims they've created a faster version. The relative performance of these functions may vary depending on the machine or context. Big O notation provides a standardized way to measure performance, focusing on the scalability of algorithms.
 
-## Calculating Big O Notation
+## 3. Calculating Big O Notation
 Several rules guide the calculation of Big O notation:
 
 **Worst Case:** Big O considers the worst-case scenario. For example, in a search algorithm, we consider the scenario where the target element is the last one encountered, requiring the algorithm to perform the maximum number of operations.

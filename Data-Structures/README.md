@@ -1,4 +1,4 @@
-# Arrays
+## 1. Arrays
 
 Arrays, sometimes referred to as lists, organize items sequentially, one after another.
 
@@ -10,7 +10,7 @@ Arrays are the simplest and most commonly used data structure. They are ideal wh
 - Insert: O(n)
 - Delete: O(n)
 
-## Static vs Dynamic Arrays
+### Static vs Dynamic Arrays
 
 **Static Arrays:** 
 Fixed in size, requiring the specification of the number of elements beforehand.
@@ -22,7 +22,7 @@ In dynamic arrays, adding an element might incur an O(n) time complexity because
 
 In lower-level languages like C and C++, dynamic arrays require manual memory management using functions like `new` in C++ or `malloc` in C. Higher-level languages typically handle memory allocation automatically.
 
-# Hash Tables
+## 2. Hash Tables
 
 Hash tables, also known as hash maps, maps, unordered maps, or dictionaries, are fundamental data structures.
 
@@ -30,7 +30,7 @@ In programming languages like JavaScript, objects are a type of hash tables, whi
 
 In contrast to arrays, where values are accessed via indices and stored sequentially in memory, hash tables utilize key-value pairs. A hash function maps each key to an address in memory, facilitating efficient storage and retrieval of values.
 
-## What is a Hash Function?
+### What is a Hash Function?
 
 A hash function generates a fixed-length value for each input it receives. Key attributes of a hash function include:
 
@@ -42,7 +42,7 @@ Hash tables offer fast access to data, making them invaluable in various data st
 
 When storing key-value pairs in a hash table, the hash function determines where to store them in memory based on the generated hash.
 
-## Hash Collisions
+### Hash Collisions
 
 Hash tables exhibit the following time complexities:
 
@@ -63,11 +63,11 @@ Numerous methods exist to address hash collisions in hash tables.
 
 To gain a better understanding of hash collision resolution, explore the visualization provided by [Open Hashing Visualization (usfca.edu)](https://www.cs.usfca.edu/~galles/visualization/OpenHash.html).
 
-# Linked List
+## 3. Linked List
 
 Linked lists are essential data structures offering unique advantages over arrays.
 
-## Why Use Linked Lists?
+### Why Use Linked Lists?
 
 While arrays, both static and dynamic, have fixed or limited memory allocations, linked lists provide dynamic memory management. When arrays are full and require resizing, elements need to be copied to a new location, incurring a time complexity of O(n). Additionally, inserting or deleting elements in arrays necessitates shifting indexes, also O(n) operations.
 
@@ -81,13 +81,13 @@ Linked lists mitigate these issues:
 
 Unlike arrays, linked lists do not require shifting elements during insertions or deletions; instead, they adjust pointers.
 
-### Array Advantages over Linked Lists 
+#### Array Advantages over Linked Lists 
 
 Arrays offer fast access to elements via indices, with a time complexity of O(1). In contrast, linked lists require iteration (traversal) to find a specific value, resulting in a time complexity of O(n).
 
 Moreover, arrays benefit from sequential memory access, leveraging computer caching systems for faster iteration compared to linked lists.
 
-## What is a Linked List?
+### What is a Linked List?
 
 A linked list comprises nodes connected by pointers.
 
@@ -122,7 +122,7 @@ The doubly linked list shares similarities with the singly linked list but intro
 
 In a singly linked list, each node only holds the address of the next element, limiting traversal to forward direction. However, in a doubly linked list, nodes store references to both the next and previous elements, enabling traversal in both forward and backward directions. This bidirectional capability enhances the flexibility and functionality of the linked list data structure.
 
-## Stacks and Queues
+## 4. Stacks and Queues
 
 Stacks and queues are both linear data structures, allowing traversal through data elements one by one, with direct access to only one element at a time.
 
@@ -156,7 +156,7 @@ Queues are practical in scenarios like managing reservation requests for an even
 
 It's often advantageous to build data structures atop these fundamental structures to restrict the available operations, ensuring efficient and controlled usage. and that's why we use Stacks & Queues
 
-## Trees
+## 5. Trees
 
 Trees are hierarchical data structures crucial in everyday computing.
 
@@ -231,7 +231,7 @@ Think of a nightclub queue where both regular attendees and VIPs await entry. VI
 
 Another example is an emergency room queue in a hospital, where patients with critical conditions receive immediate attention.
 
-## Graphs
+## 6. Graphs
 
 Graphs are fundamental and extensively used data structures in computer science, particularly for modeling real-world scenarios.
 

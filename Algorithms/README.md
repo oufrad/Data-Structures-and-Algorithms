@@ -1,4 +1,4 @@
-## Recursion
+## 1. Recursion
 
 Recursion, while not an algorithm itself, is a fundamental concept utilized in algorithm design.
 
@@ -42,7 +42,7 @@ For more information on non-comparison algorithms:
 - [Radix Sort | Brilliant Math & Science Wiki](https://brilliant.org/wiki/radix-sort/)
 - [Counting Sort | Brilliant Math & Science Wiki](https://brilliant.org/wiki/counting-sort/)
 
-## Searching
+## 3. Searching
 
 Searching is a ubiquitous operation in our daily lives, facilitating tasks such as finding files on our computers, searching for specific words or phrases on a webpage, or seeking information on search engines like Google or YouTube. But how do these searches happen so swiftly, and how do companies manage search capabilities in their products?
 
@@ -118,7 +118,7 @@ Both algorithms have their strengths and are suitable for different scenarios.
 
 For finding the shortest path in a weighted graph, algorithms like Bellman or Dijkstra are preferred, with Bellman's algorithm suitable for graphs with negative weights and Dijkstra's algorithm for positive weights. BFS does not utilize weights to find the shortest path.
 
-## Dynamic Programming
+## 4. Dynamic Programming
 
 Dynamic programming serves as an optimization technique, leveraging caching to enhance computational efficiency.
 
